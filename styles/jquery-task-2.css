@@ -1,0 +1,120 @@
+.jquery-task-2__body {
+  display: grid;
+  grid-template-columns: max-content var(--spacing-40) var(--spacing-40);
+  justify-content: space-between;
+  margin-top: var(--spacing-7);
+}
+
+.jquery-task-2__calc {
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: space-between;
+
+  width: 53rem;
+  height: 100%;
+}
+
+.jquery-task-2__calc__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-column-gap: var(--spacing-8);
+  align-items: center;
+}
+
+.jquery-task-2__calc__slider {
+  display: grid;
+  grid-auto-rows: max-content;
+  width: 41.2rem;
+  height: 7.4rem;
+}
+
+/* SLIDER */
+.jquery-task-2 .slider-container {
+  width: 100%;
+  height: 3.3rem;
+
+  border-bottom: 0.2rem solid transparent;
+  border-image-source: url('../images/border.png');
+  border-image-slice: 0 0 2 0;
+  border-image-repeat: repeat;
+}
+
+.jquery-task-2 input[type='range'].slider {
+  width: calc(100% - 1.4rem);
+  margin-left: 0.75rem;
+  margin-right: 0.65rem;
+}
+
+.jquery-task-2 input[type='range'].slider::-webkit-slider-runnable-track {
+  border: none;
+}
+
+.jquery-task-2 .slider-values {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: space-between;
+
+  width: calc(100% - 2.7rem);
+  margin: auto;
+}
+
+.jquery-task-2 .slider-values__item {
+  position: relative;
+}
+
+.jquery-task-2 .slider-values__item > .tick {
+  display: block;
+  width: 1.2rem;
+  height: 0.2rem;
+
+  transform: rotate(90deg) translateX(0.4rem);
+
+  border-bottom: 0.2rem solid transparent;
+  border-image-source: url('../images/border.png');
+  border-image-slice: 0 0 2 0;
+  border-image-repeat: repeat;
+}
+
+.jquery-task-2 .slider-values__item > p {
+  font-weight: var(--font-weight-500);
+
+  position: absolute;
+  top: var(--spacing-6);
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* SLIDER */
+
+.jquery-task-2__calc__slider-tooltip {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-content: center;
+  width: 8.6rem;
+  height: 4.1rem;
+
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+  font-weight: var(--font-weight-500);
+
+  border: 0.25rem solid transparent;
+  border-image-source: url('../images/border-all.png');
+  border-image-slice: 2.5;
+  border-image-repeat: repeat;
+}
+
+.jquery-task-2__calc__slider-tooltip::after {
+  content: 'м';
+}
+
+#price {
+  max-width: 20.65rem;
+}
+
+.jquery-task-2__radios {
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-row-gap: var(--spacing-4);
+}

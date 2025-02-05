@@ -1,0 +1,115 @@
+.jquery-task-1 {
+  position: relative;
+}
+
+.jquery-task-1__slider-values {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+
+  margin-top: var(--spacing-7);
+}
+
+.jquery-task-1__slider-values__item {
+  display: grid;
+  grid-auto-rows: max-content;
+  justify-items: center;
+  text-align: center;
+
+  width: 15rem;
+}
+
+.jquery-task-1__slider-values__item > .emoji {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+}
+
+.jquery-task-1__slider-values__item > .emoji::after {
+  display: block;
+  content: '';
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: calc(50% + 0.3rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-size: contain;
+  background-position: center;
+}
+
+.jquery-task-1__slider-values__item[data-active='true'] > .emoji::after {
+  top: 50%;
+  width: inherit;
+  height: inherit;
+}
+
+.jquery-task-1__slider-values__item:nth-child(1) > .emoji::after {
+  background-image: url('../images/sad-off.png');
+}
+.jquery-task-1__slider-values__item:nth-child(2) > .emoji::after {
+  background-image: url('../images/normal-off.png');
+}
+.jquery-task-1__slider-values__item:nth-child(3) > .emoji::after {
+  background-image: url('../images/happy-off.png');
+}
+.jquery-task-1__slider-values__item:nth-child(4) > .emoji::after {
+  background-image: url('../images/very-happy-off.png');
+}
+
+.jquery-task-1__slider-values__item[data-active='true']:nth-child(1)
+  > .emoji::after {
+  background-image: url('../images/sad-on.png');
+}
+.jquery-task-1__slider-values__item[data-active='true']:nth-child(2)
+  > .emoji::after {
+  background-image: url('../images/normal-on.png');
+}
+.jquery-task-1__slider-values__item[data-active='true']:nth-child(3)
+  > .emoji::after {
+  background-image: url('../images/happy-on.png');
+}
+.jquery-task-1__slider-values__item[data-active='true']:nth-child(4)
+  > .emoji::after {
+  background-image: url('../images/very-happy-on.png');
+}
+
+.jquery-task-1__slider-values__item > .tick {
+  width: 2rem;
+  height: 0.2rem;
+
+  margin-top: 6rem;
+  transform: rotate(90deg) translateX(-50%);
+
+  border-bottom: 0.2rem solid transparent;
+  border-image-source: url('../images/border.png');
+  border-image-slice: 0 0 2 0;
+  border-image-repeat: repeat;
+}
+
+.jquery-task-1__slider-values__item > p {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.jquery-task-1__slider-container {
+  width: 100%;
+  height: 3.3rem;
+  position: absolute;
+  top: 14.2rem;
+
+  border-bottom: 0.2rem solid transparent;
+  border-image-source: url('../images/border.png');
+  border-image-slice: 0 0 2 0;
+  border-image-repeat: repeat;
+}
+
+input[type='range'].jquery-task-1__slider {
+  width: calc(100% - 12.6rem);
+  margin: 0 6.3rem;
+}
+
+input[type='range'].jquery-task-1__slider::-webkit-slider-runnable-track {
+  border: none;
+}

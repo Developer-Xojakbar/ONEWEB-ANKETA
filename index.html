@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONEWEB АНКЕТА</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="container">
+        <span id="logo"></span>
+
+        <h3 id="title">Анкета</h3>
+
+        <div class="user-inputs">
+          <div class="user-inputs__item">
+            <label for="name">Полное ФИО</label>
+            <input
+              id="name"
+              type="text"
+              name="username"
+              value="Бобохонов Хожиакбархужа Сын Бахрома"
+            />
+          </div>
+          <div class="user-inputs__item">
+            <label for="dob">Дата рождения</label>
+            <input id="dob" type="date" name="dob" value="2001-03-05" />
+          </div>
+          <div class="user-inputs__item">
+            <label for="location">Место жительства</label>
+            <input
+              id="location"
+              type="text"
+              name="location"
+              value="г. Ташкент, Узбекистан"
+            />
+          </div>
+          <div class="user-inputs__item">
+            <label for="phone">Телефон / Телеграм</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="+998 99 870 94 64"
+              value="+998 99 870 94 64 / @DeveloperXIZ"
+            />
+          </div>
+          <div class="user-inputs__item">
+            <label for="email">Почта</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="example@gmail.com"
+              value="b.xojakbar.b@gmail.com  обычно я не проверяю почту"
+            />
+          </div>
+        </div>
+
+        <div class="user-checkboxes-wrapper container-inner">
+          <h5 class="user-checkboxes__title">Расскажите о себе чекбоксами</h5>
+          <p class="user-checkboxes__description">
+            Отметьте чекбоксами пункты, которые соответствуют вашим скиллам
+            (пункт/пункт/пункт - пункты, в которых несколько технологий,
+            оставьте только те, которыми владеете)
+          </p>
+          <div class="user-checkboxes">
+            <div class="user-checkboxes__column">
+              <div class="user-checkboxes__column__item">
+                <input
+                  type="checkbox"
+                  id="checkbox-1"
+                  name="semantically"
+                  checked
+                />
+                <label for="checkbox-1">Верстаю семантично</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-2" name="bem" checked />
+                <label for="checkbox-2">БЭМ/OOCSS</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-3" name="stylus" checked />
+                <label for="checkbox-3">
+                  Stylus/LESS/SASS (подчекнуть то, чем пользуюсь)
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input
+                  type="checkbox"
+                  id="checkbox-4"
+                  name="pixel-perfect"
+                  checked
+                />
+                <label for="checkbox-4">Верстаю Pixel perfect</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-5" name="details" checked />
+                <label for="checkbox-5">
+                  Я внимателен к деталям и перед отправкой на проверку проверяю
+                  внимательно сделанную мной задачу сам
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-6" name="jquery" checked />
+                <label for="checkbox-6">Я хорошо знаю jQuery</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-7" name="ajax" checked />
+                <label for="checkbox-7">Я хорошо знаю Ajax</label>
+              </div>
+            </div>
+            <div class="user-checkboxes__column">
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-8" name="git" checked />
+                <label for="checkbox-8">Я умею пользоваться Git</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-9" name="wordpress" />
+                <label for="checkbox-9">
+                  Я знаю и умею натягивать верстку на Wordpress
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-10" name="acf" />
+                <label for="checkbox-10">
+                  Я знаю и уверенно применяю ACF в Wordpress
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-11" name="php" />
+                <label for="checkbox-11">
+                  Я знаю основы PHP и могу немного править код
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-12" name="opencart" />
+                <label for="checkbox-12">Я знаю OpenCart</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-13" name="online" checked />
+                <label for="checkbox-13">Всегда в сети онлайн</label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input
+                  type="checkbox"
+                  id="checkbox-14"
+                  name="punctuality"
+                  checked
+                />
+                <label for="checkbox-14">
+                  Я пунктуален и могу работать в сжатые сроки
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input
+                  type="checkbox"
+                  id="checkbox-15"
+                  name="multitask"
+                  checked
+                />
+                <label for="checkbox-15">
+                  Я могу быстро переключаться между задачами
+                </label>
+              </div>
+              <div class="user-checkboxes__column__item">
+                <input type="checkbox" id="checkbox-16" name="lazy" checked />
+                <label for="checkbox-16">Я ленивый(-ая)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="jquery-task-1 container-inner">
+          <h5>Уровень владения jQuery Задание №1</h5>
+          <p>
+            Ползунок должен двигаться и при смене позиции активная иконка
+            выделяться цветом
+          </p>
+          <div class="jquery-task-1__slider-values">
+            <div class="jquery-task-1__slider-values__item" data-value="0">
+              <span class="emoji"></span>
+              <span class="tick"></span>
+              <p>Не владею</p>
+            </div>
+            <div class="jquery-task-1__slider-values__item" data-value="33">
+              <span class="emoji"></span>
+              <span class="tick"></span>
+              <p>Использую готовые решения</p>
+            </div>
+            <div class="jquery-task-1__slider-values__item" data-value="67">
+              <span class="emoji"></span>
+              <span class="tick"></span>
+              <p>Использую готовые решения и умею<br />их переделывать</p>
+            </div>
+            <div
+              class="jquery-task-1__slider-values__item"
+              data-value="100"
+              data-active="true"
+            >
+              <span class="emoji"></span>
+              <span class="tick"></span>
+              <p>Пишу сложный<br />JS с нуля</p>
+            </div>
+          </div>
+          <div class="jquery-task-1__slider-container">
+            <input
+              class="jquery-task-1__slider"
+              type="range"
+              min="0"
+              max="100"
+              step="33.33333"
+              value="100"
+            />
+          </div>
+        </div>
+
+        <div class="jquery-task-2 container-inner">
+          <h5>Уровень владения jQuery Задание №2</h5>
+          <p>
+            Строительный калькулятор. В зависимости от выбранных параметров
+            должен сразу считать стоимость по формуле, указанной в Техническом
+            задании.
+          </p>
+          <div class="jquery-task-2__body">
+            <div class="jquery-task-2__calc">
+              <div class="jquery-task-2__calc__container">
+                <div class="jquery-task-2__calc__slider">
+                  <div class="slider-container">
+                    <input
+                      class="slider"
+                      type="range"
+                      min="30"
+                      max="100"
+                      step="1"
+                      value="30"
+                    />
+                  </div>
+                  <div class="slider-values">
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>30м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>40м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>50м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>60м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>70м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>80м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>90м</p>
+                    </div>
+                    <div class="slider-values__item">
+                      <span class="tick"></span>
+                      <p>100м</p>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  class="jquery-task-2__calc__slider-tooltip"
+                  contenteditable="true"
+                  >30
+                </span>
+              </div>
+              <div class="user-inputs__item">
+                <label for="price">Стоимость:</label>
+                <input id="price" type="text" name="price" readonly />
+              </div>
+            </div>
+            <div class="jquery-task-2__radios">
+              <p class="radios__item-text">Тип ремонта:</p>
+              <div class="radios__item">
+                <input
+                  type="radio"
+                  id="radio-5"
+                  name="repair"
+                  data-value="1"
+                  checked
+                />
+                <label for="radio-5">Новостройка</label>
+              </div>
+              <div class="radios__item">
+                <input
+                  type="radio"
+                  id="radio-6"
+                  name="repair"
+                  data-value="1.5"
+                />
+                <label for="radio-6">Вторичное жилье</label>
+              </div>
+              <div class="radios__item">
+                <input type="radio" id="radio-7" name="repair" data-value="2" />
+                <label for="radio-7">Частный дом</label>
+              </div>
+            </div>
+            <div class="jquery-task-2__radios">
+              <p class="radios__item-text">Тарифы:</p>
+              <div class="radios__item">
+                <input
+                  type="radio"
+                  id="radio-8"
+                  name="tariff"
+                  checked
+                  data-value="1500"
+                />
+                <label for="radio-8">Частичный</label>
+              </div>
+              <div class="radios__item">
+                <input
+                  type="radio"
+                  id="radio-9"
+                  name="tariff"
+                  data-value="2500"
+                />
+                <label for="radio-9">Косметический</label>
+              </div>
+              <div class="radios__item">
+                <input
+                  type="radio"
+                  id="radio-10"
+                  name="tariff"
+                  data-value="3500"
+                />
+                <label for="radio-10">Под ключ</label>
+              </div>
+              <div class="radios__item">
+                <input
+                  type="radio"
+                  id="radio-11"
+                  name="tariff"
+                  data-value="4500"
+                />
+                <label for="radio-11">Капитальный</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-textarea container-inner">
+          <h5>Расскажите о себе словами</h5>
+          <p class="user-textarea__description">
+            Напишите пару предложений, чем вас привлекла наша вакансия и чего вы
+            ожидаете от работы в ONE WEB.<br />Кстати, будет здорово, если при
+            нехватке места для текста строки будут добавляться автоматически.
+          </p>
+          <textarea rows="3">
+Деньги очень нужны чтобы кормить семью и хорошо жить.
+От вас жду стабильный доход и рост. 
+Что бы во время дали месячную зарплату. 
+Было бы здорово если работа будет 5/2 в неделю.
+
+При нехватке места для текста строки будут добавляться автоматически.</textarea
+          >
+        </div>
+
+        <div class="user-radios-wrapper container-inner">
+          <h5>Какие у вас планы на будущее?</h5>
+          <p class="user-radios__description">
+            Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы
+            поменяются.
+          </p>
+          <div class="user-radios">
+            <div class="radios__item">
+              <input type="radio" id="radio-1" name="future" checked />
+              <label for="radio-1">Верстать</label>
+            </div>
+            <div class="radios__item">
+              <input type="radio" id="radio-2" name="future" />
+              <label for="radio-2">Прокачиваться в JS</label>
+            </div>
+            <div class="radios__item">
+              <input type="radio" id="radio-3" name="future" />
+              <label for="radio-3">Менеджерство</label>
+            </div>
+            <div class="radios__item">
+              <input type="radio" id="radio-4" name="future" />
+              <label for="radio-4">Другое</label>
+            </div>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="user-inputs__item container-inner">
+          <label for="work-experience">Мой опыт работы:</label>
+          <input
+            id="work-experience"
+            type="text"
+            name="work_experience"
+            value="6 - 7 лет"
+          />
+        </div>
+        <div class="user-inputs__item container-inner">
+          <label for="test-time"
+            >Кол-во часов, потраченных на тестовое задание:
+          </label>
+          <input
+            id="test-time"
+            type="text"
+            name="test_hours"
+            value="14 часов"
+          />
+        </div>
+        <div class="user-inputs__item container-inner">
+          <label for="fill-date">Дата заполнения:</label>
+          <input
+            id="fill-date"
+            type="date"
+            name="fill_date"
+            value="2025-02-05"
+          />
+        </div>
+      </div>
+
+      <div id="shadows">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
